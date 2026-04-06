@@ -1,14 +1,14 @@
 :root {
-  --bg: #0e0909;
-  --bg-deep: #080606;
-  --surface: rgba(220, 50, 50, 0.06);
-  --surface-strong: #150909;
-  --text: #f0d8d8;
-  --muted: #8a4a4a;
-  --line: rgba(220, 50, 50, 0.16);
-  --accent: #e53935;
-  --accent-2: #b71c1c;
-  --glow: rgba(229, 57, 53, 0.30);
+  --bg: #030d0f;
+  --bg-deep: #020a0c;
+  --surface: rgba(0, 178, 169, 0.06);
+  --surface-strong: #061416;
+  --text: #d0f0ee;
+  --muted: #3a8a84;
+  --line: rgba(0, 178, 169, 0.16);
+  --accent: #00b2a9;
+  --accent-2: #007a74;
+  --glow: rgba(0, 178, 169, 0.30);
 }
 
 * {
@@ -24,9 +24,9 @@ body {
   min-height: 100vh;
   color: var(--text);
   background:
-    radial-gradient(circle at top left, rgba(220, 50, 50, 0.07), transparent 28%),
-    radial-gradient(circle at 85% 20%, rgba(180, 20, 20, 0.05), transparent 18%),
-    linear-gradient(135deg, #0e0909 0%, #0b0606 52%, #0d0808 100%);
+    radial-gradient(circle at top left, rgba(0, 178, 169, 0.07), transparent 28%),
+    radial-gradient(circle at 85% 20%, rgba(0, 120, 115, 0.05), transparent 18%),
+    linear-gradient(135deg, #030d0f 0%, #020b0d 52%, #030e10 100%);
   font-family: Georgia, "Times New Roman", serif;
 }
 
@@ -112,14 +112,14 @@ a {
 
 .button-primary {
   background: linear-gradient(135deg, var(--accent), var(--accent-2));
-  color: #f0d8d8;
+  color: #d0f0ee;
   font-weight: 700;
   box-shadow: 0 14px 30px var(--glow);
 }
 
 .button-secondary {
   border: 1px solid var(--line);
-  background: rgba(220, 50, 50, 0.07);
+  background: rgba(0, 178, 169, 0.07);
   color: var(--text);
 }
 
@@ -134,7 +134,7 @@ a {
 
 .highlight-list li {
   border: 1px solid var(--line);
-  background: rgba(220, 50, 50, 0.06);
+  background: rgba(0, 178, 169, 0.06);
   border-radius: 999px;
   padding: 10px 14px;
   font-size: 0.94rem;
@@ -144,12 +144,12 @@ a {
 .hero-art {
   position: relative;
   min-height: 620px;
-  border: 1px solid rgba(220, 50, 50, 0.14);
+  border: 1px solid rgba(0, 178, 169, 0.14);
   border-radius: 36px;
   overflow: hidden;
   background:
-    linear-gradient(180deg, rgba(220, 50, 50, 0.06), rgba(35, 5, 5, 0.90)),
-    linear-gradient(145deg, #1e0a0a, #0b0404);
+    linear-gradient(180deg, rgba(0, 178, 169, 0.06), rgba(2, 30, 28, 0.90)),
+    linear-gradient(145deg, #061a1a, #020c0c);
 }
 
 .orb {
@@ -163,7 +163,7 @@ a {
   left: 48px;
   width: 180px;
   height: 180px;
-  background: radial-gradient(circle, rgba(229, 57, 53, 0.45), rgba(229, 57, 53, 0.04));
+  background: radial-gradient(circle, rgba(0, 178, 169, 0.45), rgba(0, 178, 169, 0.04));
 }
 
 .orb-two {
@@ -171,7 +171,7 @@ a {
   bottom: 62px;
   width: 220px;
   height: 220px;
-  background: radial-gradient(circle, rgba(183, 28, 28, 0.32), rgba(183, 28, 28, 0.03));
+  background: radial-gradient(circle, rgba(0, 122, 116, 0.32), rgba(0, 122, 116, 0.03));
 }
 
 .mudra-panel {
@@ -182,8 +182,8 @@ a {
   padding: 18px;
   border-radius: 24px;
   color: var(--text);
-  background: rgba(220, 50, 50, 0.07);
-  border: 1px solid rgba(220, 50, 50, 0.18);
+  background: rgba(0, 178, 169, 0.07);
+  border: 1px solid rgba(0, 178, 169, 0.18);
 }
 
 .mudra-panel strong {
@@ -195,7 +195,7 @@ a {
 
 .mudra-panel p {
   margin: 10px 0 0;
-  color: rgba(240, 216, 216, 0.72);
+  color: rgba(208, 240, 238, 0.72);
   line-height: 1.6;
 }
 
@@ -209,7 +209,7 @@ a {
 .mudra-ring div {
   position: absolute;
   border-radius: 50%;
-  border: 1px solid rgba(220, 50, 50, 0.14);
+  border: 1px solid rgba(0, 178, 169, 0.14);
 }
 
 .mudra-ring div:nth-child(1) {
@@ -237,7 +237,7 @@ a {
 .info-card {
   padding: 24px;
   border-radius: 28px;
-  background: rgba(220, 50, 50, 0.05);
+  background: rgba(0, 178, 169, 0.05);
   border: 1px solid var(--line);
 }
 
@@ -260,7 +260,7 @@ a {
   padding: 28px;
   border-radius: 32px;
   border: 1px solid var(--line);
-  background: rgba(220, 50, 50, 0.04);
+  background: rgba(0, 178, 169, 0.04);
 }
 
 .details-copy h2 {
@@ -289,7 +289,7 @@ a {
   padding: 20px;
   border-radius: 24px;
   background:
-    linear-gradient(180deg, rgba(220, 50, 50, 0.06), rgba(140, 10, 10, 0.12));
+    linear-gradient(180deg, rgba(0, 178, 169, 0.06), rgba(0, 80, 76, 0.12));
   border: 1px solid var(--line);
 }
 
