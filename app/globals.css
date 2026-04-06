@@ -1,14 +1,14 @@
 :root {
-  --bg: #030d0f;
-  --bg-deep: #020a0c;
-  --surface: rgba(0, 178, 169, 0.06);
-  --surface-strong: #061416;
-  --text: #d0f0ee;
-  --muted: #3a8a84;
-  --line: rgba(0, 178, 169, 0.16);
-  --accent: #00b2a9;
-  --accent-2: #007a74;
-  --glow: rgba(0, 178, 169, 0.30);
+  --bg: #fbe8ce;
+  --bg-deep: #e4dfb5;
+  --surface: rgba(195, 204, 155, 0.26);
+  --surface-strong: #efe3bf;
+  --text: #4f5f34;
+  --muted: #738654;
+  --line: rgba(154, 177, 122, 0.34);
+  --accent: #9ab17a;
+  --accent-2: #7f945f;
+  --glow: rgba(154, 177, 122, 0.28);
 }
 
 * {
@@ -24,9 +24,9 @@ body {
   min-height: 100vh;
   color: var(--text);
   background:
-    radial-gradient(circle at top left, rgba(0, 178, 169, 0.07), transparent 28%),
-    radial-gradient(circle at 85% 20%, rgba(0, 120, 115, 0.05), transparent 18%),
-    linear-gradient(135deg, #030d0f 0%, #020b0d 52%, #030e10 100%);
+    radial-gradient(circle at top left, rgba(154, 177, 122, 0.20), transparent 30%),
+    radial-gradient(circle at 85% 20%, rgba(195, 204, 155, 0.22), transparent 20%),
+    linear-gradient(135deg, #fbe8ce 0%, #efe3bf 48%, #e4dfb5 100%);
   font-family: Georgia, "Times New Roman", serif;
 }
 
@@ -112,14 +112,14 @@ a {
 
 .button-primary {
   background: linear-gradient(135deg, var(--accent), var(--accent-2));
-  color: #d0f0ee;
+  color: #fdf7eb;
   font-weight: 700;
   box-shadow: 0 14px 30px var(--glow);
 }
 
 .button-secondary {
   border: 1px solid var(--line);
-  background: rgba(0, 178, 169, 0.07);
+  background: rgba(251, 232, 206, 0.48);
   color: var(--text);
 }
 
@@ -134,7 +134,7 @@ a {
 
 .highlight-list li {
   border: 1px solid var(--line);
-  background: rgba(0, 178, 169, 0.06);
+  background: rgba(251, 232, 206, 0.52);
   border-radius: 999px;
   padding: 10px 14px;
   font-size: 0.94rem;
@@ -144,12 +144,12 @@ a {
 .hero-art {
   position: relative;
   min-height: 620px;
-  border: 1px solid rgba(0, 178, 169, 0.14);
+  border: 1px solid rgba(154, 177, 122, 0.24);
   border-radius: 36px;
   overflow: hidden;
   background:
-    linear-gradient(180deg, rgba(0, 178, 169, 0.06), rgba(2, 30, 28, 0.90)),
-    linear-gradient(145deg, #061a1a, #020c0c);
+    linear-gradient(180deg, rgba(251, 232, 206, 0.28), rgba(228, 223, 181, 0.88)),
+    linear-gradient(145deg, #f7ebcd, #d9d6ac);
 }
 
 .orb {
@@ -163,7 +163,7 @@ a {
   left: 48px;
   width: 180px;
   height: 180px;
-  background: radial-gradient(circle, rgba(0, 178, 169, 0.45), rgba(0, 178, 169, 0.04));
+  background: radial-gradient(circle, rgba(154, 177, 122, 0.5), rgba(154, 177, 122, 0.06));
 }
 
 .orb-two {
@@ -171,7 +171,7 @@ a {
   bottom: 62px;
   width: 220px;
   height: 220px;
-  background: radial-gradient(circle, rgba(0, 122, 116, 0.32), rgba(0, 122, 116, 0.03));
+  background: radial-gradient(circle, rgba(195, 204, 155, 0.42), rgba(195, 204, 155, 0.05));
 }
 
 .mudra-panel {
@@ -182,8 +182,8 @@ a {
   padding: 18px;
   border-radius: 24px;
   color: var(--text);
-  background: rgba(0, 178, 169, 0.07);
-  border: 1px solid rgba(0, 178, 169, 0.18);
+  background: rgba(251, 232, 206, 0.58);
+  border: 1px solid rgba(154, 177, 122, 0.24);
 }
 
 .mudra-panel strong {
@@ -195,7 +195,7 @@ a {
 
 .mudra-panel p {
   margin: 10px 0 0;
-  color: rgba(208, 240, 238, 0.72);
+  color: rgba(79, 95, 52, 0.8);
   line-height: 1.6;
 }
 
@@ -209,7 +209,7 @@ a {
 .mudra-ring div {
   position: absolute;
   border-radius: 50%;
-  border: 1px solid rgba(0, 178, 169, 0.14);
+  border: 1px solid rgba(154, 177, 122, 0.24);
 }
 
 .mudra-ring div:nth-child(1) {
@@ -237,7 +237,7 @@ a {
 .info-card {
   padding: 24px;
   border-radius: 28px;
-  background: rgba(0, 178, 169, 0.05);
+  background: rgba(251, 232, 206, 0.45);
   border: 1px solid var(--line);
 }
 
@@ -260,7 +260,7 @@ a {
   padding: 28px;
   border-radius: 32px;
   border: 1px solid var(--line);
-  background: rgba(0, 178, 169, 0.04);
+  background: rgba(251, 232, 206, 0.38);
 }
 
 .details-copy h2 {
@@ -289,7 +289,7 @@ a {
   padding: 20px;
   border-radius: 24px;
   background:
-    linear-gradient(180deg, rgba(0, 178, 169, 0.06), rgba(0, 80, 76, 0.12));
+    linear-gradient(180deg, rgba(251, 232, 206, 0.5), rgba(195, 204, 155, 0.34));
   border: 1px solid var(--line);
 }
 
