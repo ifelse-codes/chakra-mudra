@@ -1,21 +1,21 @@
 const highlights = [
-  "Daily hand-flow rituals",
-  "Breath-led focus sequences",
-  "Calm, energy, and clarity tracks",
+  "Boho ritual-inspired visuals",
+  "Sage-led calm and breathwork",
+  "Grounding daily reset sequences",
 ];
 
 const cards = [
   {
     title: "Ground",
-    text: "Begin with quiet, tactile mudra practices that settle attention and slow internal noise.",
+    text: "Begin with slow hand gestures, soft breath pacing, and a grounded rhythm that quiets mental clutter.",
   },
   {
     title: "Align",
-    text: "Move through guided breath patterns matched to chakra-inspired intentions and body states.",
+    text: "Layer intention, posture, and breath into a centered mid-practice flow shaped by earthy ceremonial cues.",
   },
   {
-    title: "Radiate",
-    text: "Finish with a short integration flow designed to carry steadiness into work, study, and rest.",
+    title: "Settle",
+    text: "Close with a warm, restorative finish that carries steadiness into study, work, and evening rest.",
   },
 ];
 
@@ -25,10 +25,11 @@ export default function Home() {
       <section className="hero">
         <div className="hero-copy">
           <p className="eyebrow">Chakra Mudra</p>
-          <h1>Ancient gesture work, designed for a modern daily reset.</h1>
+          <h1>Boho ritual energy, shaped into a calm modern reset.</h1>
           <p className="lede">
-            Chakra Mudra is a demo wellness landing page that pairs hand mudras,
-            guided breath, and intentional rhythm into one clear digital ritual.
+            Chakra Mudra is a demo wellness landing page wrapped in sage green,
+            burnt terracotta, and soft desert light. It pairs mudras, guided
+            breath, and intentional pacing into one grounded digital ritual.
           </p>
           <div className="actions">
             <a className="button button-primary" href="#experience">
@@ -48,10 +49,13 @@ export default function Home() {
         <div className="hero-art" aria-hidden="true">
           <div className="orb orb-one" />
           <div className="orb orb-two" />
+          <div className="boho-charm boho-charm-top" />
+          <div className="boho-charm boho-charm-bottom" />
+          <div className="boho-dots" />
           <div className="mudra-panel">
             <span>01</span>
-            <strong>Breath x Gesture</strong>
-            <p>Center your hands. Match your breath. Let your focus lock in.</p>
+            <strong>Sage x Terracotta</strong>
+            <p>Center your hands, slow your breath, and settle into a warmer visual rhythm.</p>
           </div>
           <div className="mudra-ring">
             <div />
@@ -74,11 +78,11 @@ export default function Home() {
       <section className="details-section" id="details">
         <div className="details-copy">
           <p className="section-label">Why it stands out</p>
-          <h2>A landing page demo with a distinct visual system.</h2>
+          <h2>A landing page demo with a softer boho editorial system.</h2>
           <p>
-            Built in Next.js with the App Router, this demo leans into earthy
-            gradients, intentional spacing, and editorial typography rather than
-            generic startup UI.
+            Built in Next.js with the App Router, this version leans into sage
+            hues, burnt terracotta accents, layered light lines, and a quieter
+            handmade mood instead of generic startup polish.
           </p>
         </div>
 
