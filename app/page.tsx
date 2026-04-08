@@ -1,31 +1,31 @@
 const launchPoints = [
-  "Monochrome chakra system",
-  "Faint mandala watermark fields",
-  "2026 launch-direction narrative",
+  "Prismatic chakra palette",
+  "Layered mandala depth fields",
+  "Spatial launch-direction narrative",
 ];
 
 const pillars = [
   {
     label: "Signal",
-    title: "Minimal without becoming empty.",
-    text: "Sharp spacing, dense hierarchy, and deliberate contrast make the interface feel premium instead of sterile.",
+    title: "Minimal, but charged with atmosphere.",
+    text: "The layout stays disciplined while color temperature, glow, and shadow give every section a pulse instead of a blank stare.",
   },
   {
     label: "Structure",
-    title: "Chakra geometry as product language.",
-    text: "Circular grids, orbital lines, and subtle mandala logic build identity without sliding into decorative noise.",
+    title: "Chakra geometry turned into real space.",
+    text: "Orbital rings, glass planes, and nested gradients create volume so the symbolic system feels architectural rather than ornamental.",
   },
   {
     label: "Momentum",
-    title: "Designed to feel early to the next cycle.",
-    text: "The goal is not to echo 2023 product minimalism, but to extend it into something calmer, more spiritual, and more exact.",
+    title: "Designed to move, not just sit there.",
+    text: "The interface now reads like a living object: luminous at the center, grounded at the edges, and clearly pointed toward a premium launch.",
   },
 ];
 
 const metrics = [
   { value: "2026", label: "launch-frame concept" },
-  { value: "7", label: "chakra-inspired layers" },
-  { value: "01", label: "monochrome visual system" },
+  { value: "7", label: "chakra energy bands" },
+  { value: "3D", label: "spatial visual system" },
   { value: "Next.js", label: "app-router build" },
 ];
 
@@ -34,13 +34,13 @@ export default function Home() {
     <main className="page-shell">
       <section className="hero">
         <div className="hero-copy">
-          <p className="eyebrow">Chakra Mudra / Black and White</p>
-          <h1>A monochrome chakra homepage built to define the next five years.</h1>
+          <p className="eyebrow">Chakra Mudra / Luminous Depth</p>
+          <h1>A chakra homepage with pulse, color, and real dimensionality.</h1>
           <p className="lede">
-            This concept reframes Chakra Mudra as a 2026 launch: black, white,
-            disciplined, and unmistakably modern. The system uses chakra rhythm,
-            mandala geometry, and product-grade restraint to push beyond soft
-            wellness tropes into something sharper.
+            This concept moves Chakra Mudra away from flat monochrome and into a
+            richer launch language: luminous gradients, glass surfaces, orbital
+            geometry, and grounded shadows that make the brand feel tactile,
+            elevated, and alive.
           </p>
           <div className="actions">
             <a className="button button-primary" href="#pillars">
@@ -58,20 +58,43 @@ export default function Home() {
         </div>
 
         <div className="hero-art" aria-hidden="true">
+          <div className="hero-ambient hero-ambient-top" />
+          <div className="hero-ambient hero-ambient-bottom" />
+          <div className="hero-stage" />
           <div className="hero-watermark hero-watermark-one" />
           <div className="hero-watermark hero-watermark-two" />
           <div className="chakra-orbit chakra-orbit-one" />
           <div className="chakra-orbit chakra-orbit-two" />
           <div className="chakra-orbit chakra-orbit-three" />
+          <div className="orbit-node orbit-node-one" />
+          <div className="orbit-node orbit-node-two" />
+          <div className="orbit-node orbit-node-three" />
           <div className="hero-axis hero-axis-vertical" />
           <div className="hero-axis hero-axis-horizontal" />
+          <div className="energy-stack">
+            <div className="energy-shadow" />
+            <div className="energy-disc energy-disc-outer" />
+            <div className="energy-disc energy-disc-middle" />
+            <div className="energy-disc energy-disc-inner" />
+            <div className="energy-core">
+              <span />
+            </div>
+          </div>
           <div className="hero-badge">
             <span>Launch Theme</span>
-            <strong>Chakra / Monochrome</strong>
-            <p>Minimalist, meditative, and product-sharp.</p>
+            <strong>Chakra / Prismatic Depth</strong>
+            <p>Glass, glow, and orbital geometry replace the old monochrome stillness.</p>
+          </div>
+          <div className="hero-insight hero-insight-top">
+            <strong>Depth Layer</strong>
+            <span>Glass panels and atmospheric bloom create foreground and horizon.</span>
+          </div>
+          <div className="hero-insight hero-insight-bottom">
+            <strong>Energy Core</strong>
+            <span>Nested discs anchor the page like a suspended object, not a flat emblem.</span>
           </div>
           <div className="hero-grid-label hero-grid-label-top">Root to Crown</div>
-          <div className="hero-grid-label hero-grid-label-bottom">2026-2030 Direction</div>
+          <div className="hero-grid-label hero-grid-label-bottom">Living Launch System</div>
         </div>
       </section>
 
@@ -88,17 +111,15 @@ export default function Home() {
       <section className="details-section" id="launch">
         <div className="details-copy">
           <p className="section-label">Launch Position</p>
-          <h2>A homepage concept for a newly launched 2026 UI theme.</h2>
+          <h2>A homepage concept that feels immersive instead of merely minimal.</h2>
           <p>
-            The interface is intentionally monochrome and minimalist, but not
-            passive. It uses spiritual geometry the way leading product teams
-            use systems thinking: as a repeatable structure that shapes rhythm,
-            clarity, and memory.
+            The interface still uses disciplined spiritual geometry, but now it
+            carries warmth, contrast, and layered material cues. The result is a
+            brand language that feels premium and embodied rather than distant.
           </p>
           <p>
-            If the last wave of product minimalism optimized for calm utility,
-            this direction adds presence. That is the move: less decoration,
-            more identity.
+            If the previous version optimized for restraint, this one adds
+            presence. That is the move: not more decoration, but more depth.
           </p>
         </div>
 
