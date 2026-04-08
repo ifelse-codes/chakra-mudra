@@ -1,22 +1,32 @@
-const highlights = [
-  "Boho ritual-inspired visuals",
-  "Sage-led calm and breathwork",
-  "Grounding daily reset sequences",
+const launchPoints = [
+  "Monochrome chakra system",
+  "Faint mandala watermark fields",
+  "2026 launch-direction narrative",
 ];
 
-const cards = [
+const pillars = [
   {
-    title: "Ground",
-    text: "Begin with slow hand gestures, soft breath pacing, and a grounded rhythm that quiets mental clutter.",
+    label: "Signal",
+    title: "Minimal without becoming empty.",
+    text: "Sharp spacing, dense hierarchy, and deliberate contrast make the interface feel premium instead of sterile.",
   },
   {
-    title: "Align",
-    text: "Layer intention, posture, and breath into a centered mid-practice flow shaped by earthy ceremonial cues.",
+    label: "Structure",
+    title: "Chakra geometry as product language.",
+    text: "Circular grids, orbital lines, and subtle mandala logic build identity without sliding into decorative noise.",
   },
   {
-    title: "Settle",
-    text: "Close with a warm, restorative finish that carries steadiness into study, work, and evening rest.",
+    label: "Momentum",
+    title: "Designed to feel early to the next cycle.",
+    text: "The goal is not to echo 2023 product minimalism, but to extend it into something calmer, more spiritual, and more exact.",
   },
+];
+
+const metrics = [
+  { value: "2026", label: "launch-frame concept" },
+  { value: "7", label: "chakra-inspired layers" },
+  { value: "01", label: "monochrome visual system" },
+  { value: "Next.js", label: "app-router build" },
 ];
 
 export default function Home() {
@@ -24,85 +34,81 @@ export default function Home() {
     <main className="page-shell">
       <section className="hero">
         <div className="hero-copy">
-          <p className="eyebrow">Chakra Mudra</p>
-          <h1>Boho ritual energy, shaped into a calm modern reset.</h1>
+          <p className="eyebrow">Chakra Mudra / Black and White</p>
+          <h1>A monochrome chakra homepage built to define the next five years.</h1>
           <p className="lede">
-            Chakra Mudra is a demo wellness landing page wrapped in sage green,
-            burnt terracotta, and soft desert light. It pairs mudras, guided
-            breath, and intentional pacing into one grounded digital ritual.
+            This concept reframes Chakra Mudra as a 2026 launch: black, white,
+            disciplined, and unmistakably modern. The system uses chakra rhythm,
+            mandala geometry, and product-grade restraint to push beyond soft
+            wellness tropes into something sharper.
           </p>
           <div className="actions">
-            <a className="button button-primary" href="#experience">
-              Explore the flow
+            <a className="button button-primary" href="#pillars">
+              Enter the system
             </a>
-            <a className="button button-secondary" href="#details">
-              See details
+            <a className="button button-secondary" href="#launch">
+              See launch notes
             </a>
           </div>
           <ul className="highlight-list">
-            {highlights.map((item) => (
+            {launchPoints.map((item) => (
               <li key={item}>{item}</li>
             ))}
           </ul>
         </div>
 
         <div className="hero-art" aria-hidden="true">
-          <div className="orb orb-one" />
-          <div className="orb orb-two" />
-          <div className="boho-charm boho-charm-top" />
-          <div className="boho-charm boho-charm-bottom" />
-          <div className="boho-dots" />
-          <div className="mudra-panel">
-            <span>01</span>
-            <strong>Sage x Terracotta</strong>
-            <p>Center your hands, slow your breath, and settle into a warmer visual rhythm.</p>
+          <div className="hero-watermark hero-watermark-one" />
+          <div className="hero-watermark hero-watermark-two" />
+          <div className="chakra-orbit chakra-orbit-one" />
+          <div className="chakra-orbit chakra-orbit-two" />
+          <div className="chakra-orbit chakra-orbit-three" />
+          <div className="hero-axis hero-axis-vertical" />
+          <div className="hero-axis hero-axis-horizontal" />
+          <div className="hero-badge">
+            <span>Launch Theme</span>
+            <strong>Chakra / Monochrome</strong>
+            <p>Minimalist, meditative, and product-sharp.</p>
           </div>
-          <div className="mudra-ring">
-            <div />
-            <div />
-            <div />
-          </div>
+          <div className="hero-grid-label hero-grid-label-top">Root to Crown</div>
+          <div className="hero-grid-label hero-grid-label-bottom">2026-2030 Direction</div>
         </div>
       </section>
 
-      <section className="cards-section" id="experience">
-        {cards.map((card) => (
-          <article className="info-card" key={card.title}>
-            <p>{card.title}</p>
-            <h2>{card.title} your practice</h2>
-            <span>{card.text}</span>
+      <section className="cards-section" id="pillars">
+        {pillars.map((pillar) => (
+          <article className="info-card" key={pillar.label}>
+            <p>{pillar.label}</p>
+            <h2>{pillar.title}</h2>
+            <span>{pillar.text}</span>
           </article>
         ))}
       </section>
 
-      <section className="details-section" id="details">
+      <section className="details-section" id="launch">
         <div className="details-copy">
-          <p className="section-label">Why it stands out</p>
-          <h2>A landing page demo with a softer boho editorial system.</h2>
+          <p className="section-label">Launch Position</p>
+          <h2>A homepage concept for a newly launched 2026 UI theme.</h2>
           <p>
-            Built in Next.js with the App Router, this version leans into sage
-            hues, burnt terracotta accents, layered light lines, and a quieter
-            handmade mood instead of generic startup polish.
+            The interface is intentionally monochrome and minimalist, but not
+            passive. It uses spiritual geometry the way leading product teams
+            use systems thinking: as a repeatable structure that shapes rhythm,
+            clarity, and memory.
+          </p>
+          <p>
+            If the last wave of product minimalism optimized for calm utility,
+            this direction adds presence. That is the move: less decoration,
+            more identity.
           </p>
         </div>
 
         <div className="stats-grid">
-          <div>
-            <strong>7</strong>
-            <span>chakra-inspired themes</span>
-          </div>
-          <div>
-            <strong>12 min</strong>
-            <span>average ritual length</span>
-          </div>
-          <div>
-            <strong>3-step</strong>
-            <span>habit-building structure</span>
-          </div>
-          <div>
-            <strong>100%</strong>
-            <span>responsive Next.js layout</span>
-          </div>
+          {metrics.map((metric) => (
+            <div key={metric.label}>
+              <strong>{metric.value}</strong>
+              <span>{metric.label}</span>
+            </div>
+          ))}
         </div>
       </section>
     </main>
