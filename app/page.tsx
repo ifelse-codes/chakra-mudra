@@ -19,9 +19,24 @@ const cards = [
   },
 ];
 
+const agileStages = [
+  { label: "Plan", class: "label-plan" },
+  { label: "Code", class: "label-code" },
+  { label: "Build", class: "label-build" },
+  { label: "Test", class: "label-test" },
+  { label: "Release", class: "label-release" },
+  { label: "Deploy", class: "label-deploy" },
+  { label: "Operate", class: "label-operate" },
+  { label: "Monitor", class: "label-monitor" },
+];
+
 export default function Home() {
   return (
     <main className="page-shell">
+      {/* Background Watermarks */}
+      <div className="watermark-mandala wm-1" aria-hidden="true" />
+      <div className="watermark-mandala wm-2" aria-hidden="true" />
+
       <section className="hero">
         <div className="hero-copy">
           <p className="eyebrow">Chakra CI/CD</p>
@@ -50,17 +65,27 @@ export default function Home() {
           <div className="orb orb-two" />
           <div className="mudra-panel">
             <span>01</span>
-            <strong>Local Parity</strong>
-            <p>Your environment, your rules. Synchronized across the cosmic cloud.</p>
+            <strong>The Agile Mandala</strong>
+            <p>Your workflow, circular and eternal. Synchronized across the cosmic cloud.</p>
           </div>
+          
           <div className="mandala-container">
-            <div className="mudra-ring spinning">
-              <div />
-              <div />
-              <div />
-            </div>
-            <div className="mandala-core">
-              <div className="core-dot" />
+            <div className="agile-wheel-container">
+              <div className="agile-ring">
+                {agileStages.map((stage) => (
+                  <div key={stage.label} className={`agile-label ${stage.class}`}>
+                    {stage.label}
+                  </div>
+                ))}
+              </div>
+              <div className="mudra-ring spinning">
+                <div />
+                <div />
+                <div />
+              </div>
+              <div className="mandala-core">
+                <div className="core-dot" />
+              </div>
             </div>
           </div>
         </div>

@@ -32,7 +32,76 @@ body {
     radial-gradient(circle at 82% 18%, rgba(31, 110, 140, 0.18), transparent 24%),
     linear-gradient(140deg, var(--background-soft) 0%, var(--background) 52%, #729891 100%);
   font-family: Georgia, "Times New Roman", serif;
+  overflow-x: hidden;
+  position: relative;
 }
+
+.watermark-mandala {
+  position: fixed;
+  z-index: -1;
+  opacity: 0.08;
+  pointer-events: none;
+  border-radius: 50%;
+  border: 1px solid var(--primary);
+}
+
+.wm-1 {
+  top: -10%;
+  right: -10%;
+  width: 800px;
+  height: 800px;
+  animation: mandala-rotate 120s linear infinite;
+}
+
+.wm-2 {
+  bottom: -15%;
+  left: -5%;
+  width: 600px;
+  height: 600px;
+  animation: mandala-rotate 180s linear infinite reverse;
+}
+
+.agile-wheel-container {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.agile-ring {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 1px dashed var(--line-strong);
+  animation: mandala-rotate 60s linear infinite;
+}
+
+.agile-label {
+  position: absolute;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 0.65rem;
+  font-weight: bold;
+  color: var(--secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background: var(--surface);
+  padding: 2px 6px;
+  border-radius: 4px;
+  animation: mandala-rotate-reverse 60s linear infinite;
+}
+
+/* Positioning labels around the circle center */
+.label-plan { top: 0; left: 50%; transform: translate(-50%, -50%); }
+.label-code { top: 14.6%; left: 85.4%; transform: translate(-50%, -50%); }
+.label-build { top: 50%; left: 100%; transform: translate(-50%, -50%); }
+.label-test { top: 85.4%; left: 85.4%; transform: translate(-50%, -50%); }
+.label-release { top: 100%; left: 50%; transform: translate(-50%, -50%); }
+.label-deploy { top: 85.4%; left: 14.6%; transform: translate(-50%, -50%); }
+.label-operate { top: 50%; left: 0; transform: translate(-50%, -50%); }
+.label-monitor { top: 14.6%; left: 14.6%; transform: translate(-50%, -50%); }
 
 ::selection {
   background: rgba(46, 138, 153, 0.34);
@@ -285,6 +354,11 @@ a {
 @keyframes mandala-rotate {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+@keyframes mandala-rotate-reverse {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(-360deg); }
 }
 
 @keyframes pulse {
