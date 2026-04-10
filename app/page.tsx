@@ -1,21 +1,21 @@
 const highlights = [
-  "Daily hand-flow rituals",
-  "Breath-led focus sequences",
-  "Calm, energy, and clarity tracks",
+  "Local = You environment parity",
+  "Seamless state synchronization",
+  "Zero-config pipeline alignment",
 ];
 
 const cards = [
   {
-    title: "Ground",
-    text: "Begin with quiet, tactile mudra practices that settle attention and slow internal noise.",
+    title: "Conceive",
+    text: "Your local environment is the source of truth. Every change reflects your intent, perfectly synced with the pipeline.",
   },
   {
-    title: "Align",
-    text: "Move through guided breath patterns matched to chakra-inspired intentions and body states.",
+    title: "Sync",
+    text: "A frictionless bridge between your machine and the cloud. Code, state, and secrets flow in perfect harmony.",
   },
   {
-    title: "Radiate",
-    text: "Finish with a short integration flow designed to carry steadiness into work, study, and rest.",
+    title: "Manifest",
+    text: "The final deployment is but a reflection of your local brilliance. It just works, every single time.",
   },
 ];
 
@@ -24,18 +24,18 @@ export default function Home() {
     <main className="page-shell">
       <section className="hero">
         <div className="hero-copy">
-          <p className="eyebrow">Chakra Mudra</p>
-          <h1>Ancient gesture work, designed for a modern daily reset.</h1>
+          <p className="eyebrow">Chakra CI/CD</p>
+          <h1>Local = You. Sync everything. Manifest reality.</h1>
           <p className="lede">
-            Chakra Mudra is a demo wellness landing page that pairs hand mudras,
-            guided breath, and intentional rhythm into one clear digital ritual.
+            Chakra CI/CD brings your local development environment into perfect alignment with your production pipeline. 
+            No more "it works on my machine"—because your machine <em>is</em> the environment.
           </p>
           <div className="actions">
-            <a className="button button-primary" href="#experience">
-              Explore the flow
+            <a className="button button-primary" href="#manifest">
+              Align Your Pipeline
             </a>
             <a className="button button-secondary" href="#details">
-              See details
+              Deep Sync
             </a>
           </div>
           <ul className="highlight-list">
@@ -50,22 +50,27 @@ export default function Home() {
           <div className="orb orb-two" />
           <div className="mudra-panel">
             <span>01</span>
-            <strong>Breath x Gesture</strong>
-            <p>Center your hands. Match your breath. Let your focus lock in.</p>
+            <strong>Local Parity</strong>
+            <p>Your environment, your rules. Synchronized across the cosmic cloud.</p>
           </div>
-          <div className="mudra-ring">
-            <div />
-            <div />
-            <div />
+          <div className="mandala-container">
+            <div className="mudra-ring spinning">
+              <div />
+              <div />
+              <div />
+            </div>
+            <div className="mandala-core">
+              <div className="core-dot" />
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="cards-section" id="experience">
+      <section className="cards-section" id="manifest">
         {cards.map((card) => (
           <article className="info-card" key={card.title}>
             <p>{card.title}</p>
-            <h2>{card.title} your practice</h2>
+            <h2>{card.title} your code</h2>
             <span>{card.text}</span>
           </article>
         ))}
@@ -73,31 +78,30 @@ export default function Home() {
 
       <section className="details-section" id="details">
         <div className="details-copy">
-          <p className="section-label">Why it stands out</p>
-          <h2>A landing page demo with a distinct visual system.</h2>
+          <p className="section-label">The Digital Dharma</p>
+          <h2>A CI/CD pipeline that mirrors your consciousness.</h2>
           <p>
-            Built in Next.js with the App Router, this demo leans into earthy
-            gradients, intentional spacing, and editorial typography rather than
-            generic startup UI.
+            We've built a delivery system that treats your local workspace as the sacred center of development. 
+            Through automated synchronization and environment mirroring, your code transcends the boundaries of local and remote.
           </p>
         </div>
 
         <div className="stats-grid">
           <div>
-            <strong>7</strong>
-            <span>chakra-inspired themes</span>
+            <strong>∞</strong>
+            <span>environment parity</span>
           </div>
           <div>
-            <strong>12 min</strong>
-            <span>average ritual length</span>
+            <strong>0 ms</strong>
+            <span>sync latency intent</span>
           </div>
           <div>
-            <strong>3-step</strong>
-            <span>habit-building structure</span>
+            <strong>1-step</strong>
+            <span>enlightenment script</span>
           </div>
           <div>
             <strong>100%</strong>
-            <span>responsive Next.js layout</span>
+            <span>deterministic bliss</span>
           </div>
         </div>
       </section>
